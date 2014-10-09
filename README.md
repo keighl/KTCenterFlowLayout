@@ -4,7 +4,9 @@ KTCenterFlowLayout is a subclass of UICollectionViewFlowLayout which aligns coll
 
 ### Usage
 
-`pod 'KTCenterFlowLayout', git: 'https://github.com/keighl/KTCenterFlowLayout.git'`
+```ruby
+pod 'KTCenterFlowLayout', git: 'https://github.com/keighl/KTCenterFlowLayout.git'
+```
 
 ```objective-c
 KTCenterFlowLayout *layout = [KTCenterFlowLayout new];
