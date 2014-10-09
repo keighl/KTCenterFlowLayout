@@ -7,6 +7,9 @@
 
 #import <UIKit/UIKit.h>
 
+/**
+ * Aligns cells to the center of a collection view.
+ */
 @interface KTCenterFlowLayout : UICollectionViewFlowLayout
 
 @end

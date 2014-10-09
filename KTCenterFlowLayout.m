@@ -45,6 +45,7 @@
     CGFloat alignmentWidth = aggregateItemWidths + aggregateInteritemSpacing;
     CGFloat alignmentXOffset = (CGRectGetWidth(self.collectionView.bounds) - alignmentWidth) / 2.f;
 
+    // Adjust each item's position to be centered
     CGRect previousFrame = CGRectZero;
     for (UICollectionViewLayoutAttributes *itemAttributes in itemAttributesCollection)
     {
