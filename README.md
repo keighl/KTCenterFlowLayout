@@ -19,4 +19,6 @@ layout.minimumLineSpacing = 10.f;
 
 ### Example
 
+See the layout in use in the `./Example` app:
+
 ![](https://github.com/keighl/KTCenterFlowLayout/raw/master/example.png)
