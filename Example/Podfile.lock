@@ -12,8 +12,13 @@ EXTERNAL SOURCES:
   KTCenterFlowLayout:
     :path: ..
 
-SPEC CHECKSUMS:
-  KTCategories: ab699becac11d8b923aa6750eca2c77006c32d35
-  KTCenterFlowLayout: dfde4a18640891ef4c4300a8961e9ca7fb6e20b5
+CHECKOUT OPTIONS:
+  KTCategories:
+    :commit: 383afb30ccab1649dcf9d60c3cd277d6fc42d5f5
+    :git: https://github.com/keighl/KTCategories.git
 
-COCOAPODS: 0.33.1
+SPEC CHECKSUMS:
+  KTCategories: bdb65f6f8d1ed9ff67eec33178d4e619d6de7d9d
+  KTCenterFlowLayout: c120e338e8d064cedbfa865c79012853c45afac5
+
+COCOAPODS: 0.36.0

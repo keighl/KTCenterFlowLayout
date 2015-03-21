@@ -6,6 +6,6 @@ All notable changes to this project will be documented in this file.
 
 * Intitial version!
 
-## 0.0.2 - 2015-02-26
+## 0.0.2 - 2015-03-21
 
-* Swift version!
+* Separate swift podspect... thanks @MoridinBG

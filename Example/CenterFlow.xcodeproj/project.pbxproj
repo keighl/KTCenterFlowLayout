@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		58A0D63F05D348C4BFAF6CBD /* libPods-CenterFlowTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B25D8224D48435FBC3ED5B2 /* libPods-CenterFlowTests.a */; };
-		A3C7E46C2F984206AB0DE373 /* libPods-CenterFlow.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EE27BDFC71E4636AB938C3A /* libPods-CenterFlow.a */; };
+		5351A7ABCC652379D5412043 /* libPods-CenterFlowTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA0FF2F233AC4708DDDF959F /* libPods-CenterFlowTests.a */; };
+		89C9C8C1CAA139E8C3F8DC27 /* libPods-CenterFlow.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19FE6FBDF1A7F0531B0558FC /* libPods-CenterFlow.a */; };
 		CF2A543419E702E500BAFA7F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2A543319E702E500BAFA7F /* main.m */; };
 		CF2A543719E702E500BAFA7F /* KTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2A543619E702E500BAFA7F /* KTAppDelegate.m */; };
 		CF2A543F19E702E500BAFA7F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF2A543E19E702E500BAFA7F /* Images.xcassets */; };
@@ -29,10 +29,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4B25D8224D48435FBC3ED5B2 /* libPods-CenterFlowTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CenterFlowTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		70D6A9920301408DAB9750F2 /* Pods-CenterFlow.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CenterFlow.xcconfig"; path = "Pods/Pods-CenterFlow.xcconfig"; sourceTree = "<group>"; };
-		7EE27BDFC71E4636AB938C3A /* libPods-CenterFlow.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CenterFlow.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AFF791EDB24B4108AED4EF9C /* Pods-CenterFlowTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CenterFlowTests.xcconfig"; path = "Pods/Pods-CenterFlowTests.xcconfig"; sourceTree = "<group>"; };
+		19FE6FBDF1A7F0531B0558FC /* libPods-CenterFlow.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CenterFlow.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3ECF6DD851140C95357BED1E /* Pods-CenterFlowTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CenterFlowTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CenterFlowTests/Pods-CenterFlowTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4AFEF64C7155472DB962BE48 /* Pods-CenterFlow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CenterFlow.release.xcconfig"; path = "Pods/Target Support Files/Pods-CenterFlow/Pods-CenterFlow.release.xcconfig"; sourceTree = "<group>"; };
+		53AAACBC5E8ACD76A2F4BF31 /* Pods-CenterFlowTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CenterFlowTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CenterFlowTests/Pods-CenterFlowTests.release.xcconfig"; sourceTree = "<group>"; };
+		A75292300854AF4BFB32B96E /* Pods-CenterFlow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CenterFlow.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CenterFlow/Pods-CenterFlow.debug.xcconfig"; sourceTree = "<group>"; };
+		BA0FF2F233AC4708DDDF959F /* libPods-CenterFlowTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CenterFlowTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF2A542E19E702E500BAFA7F /* CenterFlow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CenterFlow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF2A543219E702E500BAFA7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CF2A543319E702E500BAFA7F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -54,7 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A3C7E46C2F984206AB0DE373 /* libPods-CenterFlow.a in Frameworks */,
+				89C9C8C1CAA139E8C3F8DC27 /* libPods-CenterFlow.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,7 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				58A0D63F05D348C4BFAF6CBD /* libPods-CenterFlowTests.a in Frameworks */,
+				5351A7ABCC652379D5412043 /* libPods-CenterFlowTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,10 +74,21 @@
 		0405686C57B14B068693DE2D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7EE27BDFC71E4636AB938C3A /* libPods-CenterFlow.a */,
-				4B25D8224D48435FBC3ED5B2 /* libPods-CenterFlowTests.a */,
+				19FE6FBDF1A7F0531B0558FC /* libPods-CenterFlow.a */,
+				BA0FF2F233AC4708DDDF959F /* libPods-CenterFlowTests.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		49E6FFD8914783FD091479DC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A75292300854AF4BFB32B96E /* Pods-CenterFlow.debug.xcconfig */,
+				4AFEF64C7155472DB962BE48 /* Pods-CenterFlow.release.xcconfig */,
+				3ECF6DD851140C95357BED1E /* Pods-CenterFlowTests.debug.xcconfig */,
+				53AAACBC5E8ACD76A2F4BF31 /* Pods-CenterFlowTests.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		CF2A542519E702E500BAFA7F = {
@@ -84,9 +97,8 @@
 				CF2A543019E702E500BAFA7F /* CenterFlow */,
 				CF2A544A19E702E500BAFA7F /* CenterFlowTests */,
 				CF2A542F19E702E500BAFA7F /* Products */,
-				70D6A9920301408DAB9750F2 /* Pods-CenterFlow.xcconfig */,
 				0405686C57B14B068693DE2D /* Frameworks */,
-				AFF791EDB24B4108AED4EF9C /* Pods-CenterFlowTests.xcconfig */,
+				49E6FFD8914783FD091479DC /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -252,7 +264,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-CenterFlowTests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CenterFlowTests/Pods-CenterFlowTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		6A360096C3484F65AB0C8820 /* Check Pods Manifest.lock */ = {
@@ -282,7 +294,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-CenterFlow-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CenterFlow/Pods-CenterFlow-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FAB80B0BEE844C7CABCBD919 /* Check Pods Manifest.lock */ = {
@@ -411,7 +423,7 @@
 		};
 		CF2A545219E702E500BAFA7F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 70D6A9920301408DAB9750F2 /* Pods-CenterFlow.xcconfig */;
+			baseConfigurationReference = A75292300854AF4BFB32B96E /* Pods-CenterFlow.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CenterFlow/Info.plist;
@@ -423,7 +435,7 @@
 		};
 		CF2A545319E702E500BAFA7F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 70D6A9920301408DAB9750F2 /* Pods-CenterFlow.xcconfig */;
+			baseConfigurationReference = 4AFEF64C7155472DB962BE48 /* Pods-CenterFlow.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CenterFlow/Info.plist;
@@ -435,7 +447,7 @@
 		};
 		CF2A545519E702E500BAFA7F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AFF791EDB24B4108AED4EF9C /* Pods-CenterFlowTests.xcconfig */;
+			baseConfigurationReference = 3ECF6DD851140C95357BED1E /* Pods-CenterFlowTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -455,7 +467,7 @@
 		};
 		CF2A545619E702E500BAFA7F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AFF791EDB24B4108AED4EF9C /* Pods-CenterFlowTests.xcconfig */;
+			baseConfigurationReference = 53AAACBC5E8ACD76A2F4BF31 /* Pods-CenterFlowTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (

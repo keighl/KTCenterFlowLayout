@@ -5,20 +5,28 @@ KTCenterFlowLayout is a subclass of UICollectionViewFlowLayout which Aligns cell
 ### Usage
 
 ```ruby
+// Podfile
+
 pod 'KTCenterFlowLayout'
+
+
+// Using swift?
+pod 'KTCenterFlowLayoutSwift'
+
 ```
 
 Objective-C:
+
 ```objective-c
 KTCenterFlowLayout *layout = [KTCenterFlowLayout new];
 layout.minimumInteritemSpacing = 10.f;
 layout.minimumLineSpacing = 10.f;
 
-
 [[UICollectionViewController alloc] initWithCollectionViewLayout:layout];
 ```
 
 Swift:
+
 ```swift
 let layout = KTCenterFlowLayout()
 layout.minimumInteritemSpacing = 10.0
