@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "KTCenterFlowLayoutSwift"
-  s.version          = "0.0.1"
+  s.version          = "0.0.2"
   s.summary          = "Aligns cells to the center of a collection view."
 
   s.homepage         = "https://github.com/keighl/KTCenterFlowLayout"
