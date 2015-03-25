@@ -8,10 +8,6 @@ KTCenterFlowLayout is a subclass of UICollectionViewFlowLayout which Aligns cell
 # In your Podfile
 
 pod 'KTCenterFlowLayout'
-
-# Using swift?
-pod 'KTCenterFlowLayoutSwift'
-
 ```
 
 Objective-C:

@@ -1,6 +1,6 @@
 PODS:
   - KTCategories (0.0.5)
-  - KTCenterFlowLayout (0.0.1)
+  - KTCenterFlowLayout (0.0.2)
 
 DEPENDENCIES:
   - KTCategories (from `https://github.com/keighl/KTCategories.git`)
@@ -19,6 +19,6 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   KTCategories: bdb65f6f8d1ed9ff67eec33178d4e619d6de7d9d
-  KTCenterFlowLayout: c120e338e8d064cedbfa865c79012853c45afac5
+  KTCenterFlowLayout: add70553644c401a6e4c51acf4fdbd5a91a1bae0
 
 COCOAPODS: 0.36.0
