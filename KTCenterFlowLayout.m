@@ -26,10 +26,11 @@
     [rowCollections[yCenter] addObject:itemAttributes];
   }
 
+  CGFloat collectionViewWidth = CGRectGetWidth(self.collectionView.bounds);
+  
   // Adjust the items in each row
-  [rowCollections enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
+  [rowCollections enumerateKeysAndObjectsUsingBlock:^(id key, NSArray *itemAttributesCollection, BOOL *stop) {
 
-    NSArray *itemAttributesCollection = obj;
     NSInteger itemsInRow = [itemAttributesCollection count];
 
     // x-x-x-x ... sum up the interim space
@@ -43,7 +44,7 @@
     // Build an alignment rect
     // |==|--------|==|
     CGFloat alignmentWidth = aggregateItemWidths + aggregateInteritemSpacing;
-    CGFloat alignmentXOffset = (CGRectGetWidth(self.collectionView.bounds) - alignmentWidth) / 2.f;
+    CGFloat alignmentXOffset = (collectionViewWidth - alignmentWidth) / 2.f;
 
     // Adjust each item's position to be centered
     CGRect previousFrame = CGRectZero;
