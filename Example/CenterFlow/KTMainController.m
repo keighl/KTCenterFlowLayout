@@ -10,6 +10,8 @@
 #import "KTCenterFlowLayout.h"
 #import "KTAwesomeCell.h"
 
+#define VARY_HEIGHTS YES
+
 @interface KTMainController ()
 @property (strong) NSArray *states;
 @property (strong) KTAwesomeCell *sizingCell;
@@ -120,6 +122,13 @@
   self.sizingCell.label.text = self.states[indexPath.row];
   [self.sizingCell setNeedsLayout];
   [self.sizingCell layoutIfNeeded];
+#ifdef VARY_HEIGHTS
+  CGSize size = self.sizingCell.intrinsicContentSize;
+  size.height = (self.sizingCell.label.text.length == 7) ? size.height+20 : size.height;
+  size.height = (self.sizingCell.label.text.length == 5) ? size.height+25 : size.height;
+  size.height = (self.sizingCell.label.text.length == 8) ? size.height+45 : size.height;
+  return size;
+#endif
   return self.sizingCell.intrinsicContentSize;
 }
 
