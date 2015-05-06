@@ -7,30 +7,49 @@
 
 #import "KTCenterFlowLayout.h"
 
+@interface KTCenterFlowLayout ()
+@end
+
 @implementation KTCenterFlowLayout
 
 - (NSArray *)layoutAttributesForElementsInRect:(CGRect)rect
 {
   NSMutableArray *superAttributes = [NSMutableArray arrayWithArray:[super layoutAttributesForElementsInRect:rect]];
-
+  
   NSMutableDictionary *rowCollections = [NSMutableDictionary new];
 
   // Collect attributes by their midY coordinate.. i.e. rows!
+
   for (UICollectionViewLayoutAttributes *itemAttributes in superAttributes)
   {
-    NSNumber *yCenter = @(CGRectGetMidY(itemAttributes.frame));
-
-    if (!rowCollections[yCenter])
-      rowCollections[yCenter] = [NSMutableArray new];
-
-    [rowCollections[yCenter] addObject:itemAttributes];
+    // Normalize the midY to others in the row
+    // with variable cell heights the midYs can be ever so slightly
+    // different.
+    CGFloat midYRound = roundf(CGRectGetMidY(itemAttributes.frame));
+    CGFloat midYPlus = midYRound + 1;
+    CGFloat midYMinus = midYRound - 1;
+    NSNumber *key;
+    
+    if (rowCollections[@(midYPlus)])
+      key = @(midYPlus);
+    
+    if (rowCollections[@(midYMinus)])
+      key = @(midYMinus);
+    
+    if (!key)
+      key = @(midYRound);
+    
+    if (!rowCollections[key])
+      rowCollections[key] = [NSMutableArray new];
+    
+    [(NSMutableArray *) rowCollections[key] addObject:itemAttributes];
   }
 
   CGFloat collectionViewWidth = CGRectGetWidth(self.collectionView.bounds);
   
   // Adjust the items in each row
   [rowCollections enumerateKeysAndObjectsUsingBlock:^(id key, NSArray *itemAttributesCollection, BOOL *stop) {
-
+    
     NSInteger itemsInRow = [itemAttributesCollection count];
 
     // x-x-x-x ... sum up the interim space
