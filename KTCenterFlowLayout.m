@@ -45,7 +45,7 @@
     [(NSMutableArray *) rowCollections[key] addObject:itemAttributes];
   }
 
-  CGFloat collectionViewWidth = CGRectGetWidth(self.collectionView.bounds);
+  CGFloat collectionViewWidth = CGRectGetWidth(self.collectionView.bounds) - self.collectionView.contentInset.left - self.collectionView.contentInset.right;
   
   // Adjust the items in each row
   [rowCollections enumerateKeysAndObjectsUsingBlock:^(id key, NSArray *itemAttributesCollection, BOOL *stop) {
