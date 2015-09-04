@@ -53,7 +53,24 @@
     NSInteger itemsInRow = [itemAttributesCollection count];
 
     // x-x-x-x ... sum up the interim space
-    CGFloat aggregateInteritemSpacing = self.minimumInteritemSpacing * (itemsInRow -1);
+    CGFloat interitemSpacing;
+    if ([[[self collectionView] delegate] respondsToSelector:@selector(collectionView:layout:minimumInteritemSpacingForSectionAtIndex:)]) 
+    {
+      NSUInteger section;
+      if (itemsInRow) {
+        UICollectionView * collectionView = [self collectionView];
+        id <UICollectionViewDelegateFlowLayout> delegate = [collectionView delegate];
+        
+        // assuming rows never contain elements from more than one section
+        interitemSpacing = [delegate collectionView:collectionView layout:self minimumInteritemSpacingForSectionAtIndex:[[itemAttributesCollection[0] indexPath] section]];
+      } else {
+        interitemSpacing = 0; // probably a sensible default?
+      }
+    } else {
+      interitemSpacing = [self minimumInteritemSpacing];
+    }
+    
+    CGFloat aggregateInteritemSpacing = interitemSpacing * (itemsInRow -1);
 
     // Sum the width of all elements in the row
     CGFloat aggregateItemWidths = 0.f;
@@ -74,7 +91,7 @@
       if (CGRectEqualToRect(previousFrame, CGRectZero))
         itemFrame.origin.x = alignmentXOffset;
       else
-        itemFrame.origin.x = CGRectGetMaxX(previousFrame) + self.minimumInteritemSpacing;
+        itemFrame.origin.x = CGRectGetMaxX(previousFrame) + interitemSpacing;
 
       itemAttributes.frame = itemFrame;
       previousFrame = itemFrame;
