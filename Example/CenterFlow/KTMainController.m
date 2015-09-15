@@ -115,6 +115,11 @@
 
 #pragma mark - UICollectionViewDelegateFlowLayout
 
+//- (CGFloat)collectionView:(UICollectionView *)cv layout:(UICollectionViewLayout *)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section
+//{
+//  return 30.f;
+//}
+
 - (CGSize)collectionView:(UICollectionView *)collectionView
                   layout:(UICollectionViewFlowLayout *)collectionViewLayout
   sizeForItemAtIndexPath:(NSIndexPath *)indexPath

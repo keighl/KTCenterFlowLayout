@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## 1.1 - 2015-09-15
+
+* Uses flow layout `minimumInteritemSpacingForSectionAtIndex` from delegate if available. Thanks [@danblakemore](https://github.com/danblakemore)
+
 ## 1.0.0 - 2015-05-06
 
 * Fixes issues where variable cell heights on 3x res screen pile up on top of each other

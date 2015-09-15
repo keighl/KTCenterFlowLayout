@@ -18,8 +18,10 @@
   
   NSMutableDictionary *rowCollections = [NSMutableDictionary new];
 
+  id <UICollectionViewDelegateFlowLayout> flowDelegate = (id<UICollectionViewDelegateFlowLayout>) [[self collectionView] delegate];
+  BOOL delegateSupportsInteritemSpacing = [flowDelegate respondsToSelector:@selector(collectionView:layout:minimumInteritemSpacingForSectionAtIndex:)];
+  
   // Collect attributes by their midY coordinate.. i.e. rows!
-
   for (UICollectionViewLayoutAttributes *itemAttributes in superAttributes)
   {
     // Normalize the midY to others in the row
@@ -53,21 +55,15 @@
     NSInteger itemsInRow = [itemAttributesCollection count];
 
     // x-x-x-x ... sum up the interim space
-    CGFloat interitemSpacing;
-    if ([[[self collectionView] delegate] respondsToSelector:@selector(collectionView:layout:minimumInteritemSpacingForSectionAtIndex:)]) 
+    CGFloat interitemSpacing = [self minimumInteritemSpacing];
+    
+    // Check for delegate support
+    if (delegateSupportsInteritemSpacing && itemsInRow > 0)
     {
-      NSUInteger section;
-      if (itemsInRow) {
-        UICollectionView * collectionView = [self collectionView];
-        id <UICollectionViewDelegateFlowLayout> delegate = [collectionView delegate];
-        
-        // assuming rows never contain elements from more than one section
-        interitemSpacing = [delegate collectionView:collectionView layout:self minimumInteritemSpacingForSectionAtIndex:[[itemAttributesCollection[0] indexPath] section]];
-      } else {
-        interitemSpacing = 0; // probably a sensible default?
-      }
-    } else {
-      interitemSpacing = [self minimumInteritemSpacing];
+      NSInteger section = [[itemAttributesCollection[0] indexPath] section];
+      interitemSpacing = [flowDelegate collectionView:self.collectionView
+                                               layout:self
+             minimumInteritemSpacingForSectionAtIndex:section];
     }
     
     CGFloat aggregateInteritemSpacing = interitemSpacing * (itemsInRow -1);
