@@ -14,7 +14,7 @@
 
 - (NSArray *)layoutAttributesForElementsInRect:(CGRect)rect
 {
-  NSMutableArray *superAttributes = [NSMutableArray arrayWithArray:[super layoutAttributesForElementsInRect:rect]];
+  NSMutableArray *superAttributes = [[NSMutableArray alloc] initWithArray:[super layoutAttributesForElementsInRect:rect] copyItems:YES];
   
   NSMutableDictionary *rowCollections = [NSMutableDictionary new];
 
