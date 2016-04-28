@@ -97,4 +97,21 @@
   return superAttributes;
 }
 
+- (UICollectionViewLayoutAttributes *)layoutAttributesForItemAtIndexPath:(NSIndexPath *)indexPath {
+    UICollectionViewLayoutAttributes *superAttributes = [super layoutAttributesForItemAtIndexPath:indexPath];
+    
+    // Rect that encompasses all items on indexPath's line.
+    CGRect lineRect = CGRectMake(0.0, CGRectGetMinY(superAttributes.frame), CGRectGetWidth(self.collectionView.frame), CGRectGetHeight(superAttributes.frame));
+    
+    NSArray *lineAttributes = [self layoutAttributesForElementsInRect:lineRect];
+    
+    for (UICollectionViewLayoutAttributes *itemAttributes in lineAttributes) {
+        if (itemAttributes.indexPath == indexPath) {
+            return itemAttributes;
+        }
+    }
+    
+    return nil;
+}
+
 @end
