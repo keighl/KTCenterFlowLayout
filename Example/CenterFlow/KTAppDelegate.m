@@ -7,7 +7,9 @@
 //
 
 #import "KTAppDelegate.h"
-#import "KTMainController.h"
+#import "KTBasicCollectionViewController.h"
+#import "KTVariableHeightCollectionViewController.h"
+#import "KTSelfSizingCollectionViewController.h"
 #import "KTCenterFlowLayout.h"
 
 @interface KTAppDelegate ()
@@ -18,17 +20,33 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-  self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-  self.window.backgroundColor = [UIColor whiteColor];
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.backgroundColor = [UIColor whiteColor];
   
-  UINavigationController *navController = [UINavigationController new];
-  
-  KTMainController *mainController = [[KTMainController alloc] initWithCollectionViewLayout:[KTCenterFlowLayout new]];
-  navController.viewControllers = @[mainController];
+    UINavigationController *basicNavController = [UINavigationController new];
+    basicNavController.tabBarItem = [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemFeatured tag:0];
+    basicNavController.tabBarItem.title = @"Basic";
+    KTBasicCollectionViewController *basicController = [[KTBasicCollectionViewController alloc] initWithCollectionViewLayout:[KTCenterFlowLayout new]];
+    [basicNavController setViewControllers:@[basicController]];
     
-  self.window.rootViewController = navController;
-  [self.window makeKeyAndVisible];
-  return YES;
+    UINavigationController *heightsNavController = [UINavigationController new];
+    heightsNavController.tabBarItem = [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemFeatured tag:1];
+    heightsNavController.tabBarItem.title = @"Variable Heights";
+    KTVariableHeightCollectionViewController *heightsController = [[KTVariableHeightCollectionViewController alloc] initWithCollectionViewLayout:[KTCenterFlowLayout new]];
+    [heightsNavController setViewControllers:@[heightsController]];
+    
+    UINavigationController *selfsizeNavController = [UINavigationController new];
+    selfsizeNavController.tabBarItem = [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemFeatured tag:2];
+    selfsizeNavController.tabBarItem.title = @"Self Sizing";
+    KTSelfSizingCollectionViewController *selfsizeController = [[KTSelfSizingCollectionViewController alloc] initWithCollectionViewLayout:[KTCenterFlowLayout new]];
+    [selfsizeNavController setViewControllers:@[selfsizeController]];
+    
+    UITabBarController *tabBarController = [[UITabBarController alloc] init];
+    [tabBarController setViewControllers:@[basicNavController, heightsNavController, selfsizeNavController]];
+    
+    self.window.rootViewController = tabBarController;
+    [self.window makeKeyAndVisible];
+    return YES;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

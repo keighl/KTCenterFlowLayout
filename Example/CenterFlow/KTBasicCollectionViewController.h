@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface KTMainController : UICollectionViewController
+@interface KTBasicCollectionViewController : UICollectionViewController
 
 @end

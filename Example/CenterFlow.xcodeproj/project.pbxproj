@@ -13,10 +13,13 @@
 		CF2A543419E702E500BAFA7F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2A543319E702E500BAFA7F /* main.m */; };
 		CF2A543719E702E500BAFA7F /* KTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2A543619E702E500BAFA7F /* KTAppDelegate.m */; };
 		CF2A543F19E702E500BAFA7F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF2A543E19E702E500BAFA7F /* Images.xcassets */; };
-		CF2A545919E704C700BAFA7F /* KTMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2A545819E704C700BAFA7F /* KTMainController.m */; };
+		CF2A545919E704C700BAFA7F /* KTBasicCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2A545819E704C700BAFA7F /* KTBasicCollectionViewController.m */; };
 		CF2A545C19E7061300BAFA7F /* KTAwesomeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2A545B19E7061300BAFA7F /* KTAwesomeCell.m */; };
 		CF2A545E19E7084100BAFA7F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CF2A545D19E7084100BAFA7F /* Default-568h@2x.png */; };
 		CFD354581CD942170009443A /* KTCenterFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = CFD354571CD942170009443A /* KTCenterFlowLayout.m */; };
+		CFD3545B1CD9485A0009443A /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = CFD3545A1CD9485A0009443A /* Constants.m */; };
+		CFD3545E1CD949780009443A /* KTVariableHeightCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFD3545D1CD949780009443A /* KTVariableHeightCollectionViewController.m */; };
+		CFD354611CD94AA70009443A /* KTSelfSizingCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFD354601CD94AA70009443A /* KTSelfSizingCollectionViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,13 +38,19 @@
 		CF2A543519E702E500BAFA7F /* KTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KTAppDelegate.h; sourceTree = "<group>"; };
 		CF2A543619E702E500BAFA7F /* KTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KTAppDelegate.m; sourceTree = "<group>"; };
 		CF2A543E19E702E500BAFA7F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		CF2A545719E704C700BAFA7F /* KTMainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTMainController.h; sourceTree = "<group>"; };
-		CF2A545819E704C700BAFA7F /* KTMainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KTMainController.m; sourceTree = "<group>"; };
+		CF2A545719E704C700BAFA7F /* KTBasicCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTBasicCollectionViewController.h; sourceTree = "<group>"; };
+		CF2A545819E704C700BAFA7F /* KTBasicCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KTBasicCollectionViewController.m; sourceTree = "<group>"; };
 		CF2A545A19E7061300BAFA7F /* KTAwesomeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTAwesomeCell.h; sourceTree = "<group>"; };
 		CF2A545B19E7061300BAFA7F /* KTAwesomeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KTAwesomeCell.m; sourceTree = "<group>"; };
 		CF2A545D19E7084100BAFA7F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		CFD354561CD942170009443A /* KTCenterFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KTCenterFlowLayout.h; path = ../../KTCenterFlowLayout.h; sourceTree = "<group>"; };
 		CFD354571CD942170009443A /* KTCenterFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KTCenterFlowLayout.m; path = ../../KTCenterFlowLayout.m; sourceTree = "<group>"; };
+		CFD354591CD9485A0009443A /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		CFD3545A1CD9485A0009443A /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		CFD3545C1CD949780009443A /* KTVariableHeightCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTVariableHeightCollectionViewController.h; sourceTree = "<group>"; };
+		CFD3545D1CD949780009443A /* KTVariableHeightCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KTVariableHeightCollectionViewController.m; sourceTree = "<group>"; };
+		CFD3545F1CD94AA70009443A /* KTSelfSizingCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTSelfSizingCollectionViewController.h; sourceTree = "<group>"; };
+		CFD354601CD94AA70009443A /* KTSelfSizingCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KTSelfSizingCollectionViewController.m; sourceTree = "<group>"; };
 		D7C963BB7B28CF1B2966D389 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -109,11 +118,17 @@
 				CF2A543619E702E500BAFA7F /* KTAppDelegate.m */,
 				CF2A543E19E702E500BAFA7F /* Images.xcassets */,
 				CF2A543119E702E500BAFA7F /* Supporting Files */,
-				CF2A545719E704C700BAFA7F /* KTMainController.h */,
-				CF2A545819E704C700BAFA7F /* KTMainController.m */,
+				CF2A545719E704C700BAFA7F /* KTBasicCollectionViewController.h */,
+				CF2A545819E704C700BAFA7F /* KTBasicCollectionViewController.m */,
 				CF2A545A19E7061300BAFA7F /* KTAwesomeCell.h */,
 				CF2A545B19E7061300BAFA7F /* KTAwesomeCell.m */,
 				CF0E9DA31AE914A300754C1D /* Launch.storyboard */,
+				CFD354591CD9485A0009443A /* Constants.h */,
+				CFD3545A1CD9485A0009443A /* Constants.m */,
+				CFD3545C1CD949780009443A /* KTVariableHeightCollectionViewController.h */,
+				CFD3545D1CD949780009443A /* KTVariableHeightCollectionViewController.m */,
+				CFD3545F1CD94AA70009443A /* KTSelfSizingCollectionViewController.h */,
+				CFD354601CD94AA70009443A /* KTSelfSizingCollectionViewController.m */,
 			);
 			path = CenterFlow;
 			sourceTree = "<group>";
@@ -249,10 +264,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF2A543719E702E500BAFA7F /* KTAppDelegate.m in Sources */,
+				CFD354611CD94AA70009443A /* KTSelfSizingCollectionViewController.m in Sources */,
 				CFD354581CD942170009443A /* KTCenterFlowLayout.m in Sources */,
 				CF2A545C19E7061300BAFA7F /* KTAwesomeCell.m in Sources */,
-				CF2A545919E704C700BAFA7F /* KTMainController.m in Sources */,
+				CFD3545E1CD949780009443A /* KTVariableHeightCollectionViewController.m in Sources */,
+				CF2A545919E704C700BAFA7F /* KTBasicCollectionViewController.m in Sources */,
 				CF2A543419E702E500BAFA7F /* main.m in Sources */,
+				CFD3545B1CD9485A0009443A /* Constants.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
