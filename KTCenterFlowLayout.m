@@ -89,7 +89,7 @@
       else
         itemFrame.origin.x = CGRectGetMaxX(previousFrame) + interitemSpacing;
 
-      itemAttributes.frame = itemFrame;
+      itemAttributes.frame = CGRectIntegral(itemFrame);
       previousFrame = itemFrame;
     }
   }];
