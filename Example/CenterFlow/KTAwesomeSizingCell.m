@@ -40,10 +40,7 @@
     return self;
 }
 
-- (UICollectionViewLayoutAttributes *)preferredLayoutAttributesFittingAttributes:(UICollectionViewLayoutAttributes *)layoutAttributes
-{
-    return [super preferredLayoutAttributesFittingAttributes:layoutAttributes];
-}
+
 
 
 @end

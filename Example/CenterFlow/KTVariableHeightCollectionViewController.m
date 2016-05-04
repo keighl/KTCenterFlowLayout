@@ -56,27 +56,9 @@
     KTAwesomeCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"AwesomeCell"
                                                                     forIndexPath:indexPath];
     
-    cell.label.font = [UIFont systemFontOfSize:14];
-    
     NSString *text = self.states[indexPath.row];
     cell.label.text = text;
-    
-    
-    if (text.length == 7)
-    {
-        cell.label.font = [UIFont systemFontOfSize:18];
-    }
-    
-    if (text.length == 8)
-    {
-        cell.label.font = [UIFont systemFontOfSize:24];
-    }
-    
-    if (text.length == 5)
-    {
-        cell.label.font = [UIFont systemFontOfSize:10];
-    }
-
+    cell.label.font = [self fontForText:text];
     return cell;
 }
 
@@ -88,24 +70,28 @@
 {
     NSString *text = self.states[indexPath.row];
     self.sizingCell.label.text = self.states[indexPath.row];
-    self.sizingCell.label.font = [UIFont systemFontOfSize:14];
-    
+    self.sizingCell.label.font = [self fontForText:text];
+    return self.sizingCell.intrinsicContentSize;
+}
+
+- (UIFont *)fontForText:(NSString *)text
+{
     if (text.length == 7)
     {
-        self.sizingCell.label.font = [UIFont systemFontOfSize:18];
+        return [UIFont systemFontOfSize:16];
     }
     
     if (text.length == 8)
     {
-        self.sizingCell.label.font = [UIFont systemFontOfSize:24];
+        return [UIFont systemFontOfSize:24];
     }
     
     if (text.length == 5)
     {
-        self.sizingCell.label.font = [UIFont systemFontOfSize:10];
+        return [UIFont systemFontOfSize:10];
     }
     
-    return self.sizingCell.intrinsicContentSize;
+    return [UIFont systemFontOfSize:14];
 }
 
 @end
