@@ -22,22 +22,22 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
-  
+    
+    
+    
+    
     UINavigationController *basicNavController = [UINavigationController new];
-    basicNavController.tabBarItem = [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemFeatured tag:0];
-    basicNavController.tabBarItem.title = @"Basic";
+    basicNavController.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Basic" image:[UIImage imageNamed:@"tabbar-image"] tag:2];
     KTBasicCollectionViewController *basicController = [[KTBasicCollectionViewController alloc] initWithCollectionViewLayout:[KTCenterFlowLayout new]];
     [basicNavController setViewControllers:@[basicController]];
     
     UINavigationController *heightsNavController = [UINavigationController new];
-    heightsNavController.tabBarItem = [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemFeatured tag:1];
-    heightsNavController.tabBarItem.title = @"Variable Heights";
+    heightsNavController.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Variable Heights" image:[UIImage imageNamed:@"tabbar-image"] tag:1];
     KTVariableHeightCollectionViewController *heightsController = [[KTVariableHeightCollectionViewController alloc] initWithCollectionViewLayout:[KTCenterFlowLayout new]];
     [heightsNavController setViewControllers:@[heightsController]];
     
     UINavigationController *selfsizeNavController = [UINavigationController new];
-    selfsizeNavController.tabBarItem = [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemFeatured tag:2];
-    selfsizeNavController.tabBarItem.title = @"Self Sizing";
+    selfsizeNavController.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Self Sizing" image:[UIImage imageNamed:@"tabbar-image"] tag:2];
     KTSelfSizingCollectionViewController *selfsizeController = [[KTSelfSizingCollectionViewController alloc] initWithCollectionViewLayout:[KTCenterFlowLayout new]];
     [selfsizeNavController setViewControllers:@[selfsizeController]];
     

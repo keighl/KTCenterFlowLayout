@@ -8,12 +8,12 @@
 
 #import "KTSelfSizingCollectionViewController.h"
 #import "KTCenterFlowLayout.h"
-#import "KTAwesomeCell.h"
+#import "KTAwesomeSizingCell.h"
 #import "Constants.h"
 
 @interface KTSelfSizingCollectionViewController ()
 @property (strong) NSArray *states;
-@property (strong) KTAwesomeCell *sizingCell;
+@property (strong) KTAwesomeSizingCell *sizingCell;
 @end
 
 @implementation KTSelfSizingCollectionViewController
@@ -31,9 +31,9 @@
     [(KTCenterFlowLayout *)self.collectionViewLayout setMinimumLineSpacing:15.f];
     [(KTCenterFlowLayout *)self.collectionViewLayout setSectionInset:UIEdgeInsetsMake(20, 20, 20, 20)];
     
-    [self.collectionView registerClass:[KTAwesomeCell class] forCellWithReuseIdentifier:@"AwesomeCell"];
+    [self.collectionView registerClass:[KTAwesomeSizingCell class] forCellWithReuseIdentifier:@"AwesomeCell"];
     
-    self.sizingCell = [KTAwesomeCell new];
+    self.sizingCell = [KTAwesomeSizingCell new];
     
     self.states = [Constants states];
 }
@@ -54,8 +54,8 @@
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    KTAwesomeCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"AwesomeCell"
-                                                                    forIndexPath:indexPath];
+    KTAwesomeSizingCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"AwesomeCell"                                 
+                                                                          forIndexPath:indexPath];
     
     cell.label.text = self.states[indexPath.row];
     return cell;

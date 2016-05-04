@@ -7,51 +7,44 @@
 //
 
 #import "KTAwesomeCell.h"
-#import "KTUtil.h"
-#import "UIView+KTExtras.h"
 
 @implementation KTAwesomeCell
 
 - (instancetype)initWithFrame:(CGRect)frame
 {
-  self = [super initWithFrame:frame];
+    self = [super initWithFrame:frame];
   
-  if (self)
-  {
-    self.clipsToBounds = NO;
-    self.contentView.clipsToBounds = NO;
+    if (self)
+    {
+        self.clipsToBounds = NO;
+        self.contentView.clipsToBounds = NO;
+      
+        self.contentView.layer.borderColor = [UIColor blueColor].CGColor;
+        self.contentView.layer.borderWidth = 1.f;
     
-    self.label = [KTEdgeLabel new];
-    self.label.font = [UIFont fontWithName:@"HelveticaNeue" size:14.f];
-    self.label.backgroundColor = [UIColor clearColor];
-    self.label.textColor = [UIColor blueColor];
-    self.label.clipsToBounds = NO;
-    self.label.layer.borderColor = [UIColor blueColor].CGColor;
-    self.label.layer.borderWidth = 1.f;
-    self.label.translatesAutoresizingMaskIntoConstraints = NO;
-    self.label.edgeInsets = UIEdgeInsetsMake(5, 15, 5, 15);
-    [self.contentView addSubview:self.label];
-    
-    // Autolayout
-    
-    NSDictionary *views = NSDictionaryOfVariableBindings(_label);
-    
-    [self.contentView addConstraints:[KTUtil visualConstraints:@"|[_label]|" views:views]];
-    [self.contentView addConstraints:[KTUtil visualConstraints:@"V:|[_label]|" views:views]];
+        self.label = [UILabel new];
+        self.label.translatesAutoresizingMaskIntoConstraints = NO;
+        self.label.font = [UIFont systemFontOfSize:14];
+        self.label.backgroundColor = [UIColor clearColor];
+        self.label.textColor = [UIColor blueColor];        
+        [self.contentView addSubview:self.label];
+      
+        NSDictionary *views = NSDictionaryOfVariableBindings(_label);
+
+        [self.contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-10-[_label]" options:0 metrics:nil views:views]];
+        [self.contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"|-10-[_label]" options:0 metrics:nil views:views]];
+      
+    }
   
-  }
-  
-  return self;
+    return self;
 }
 
 - (CGSize)intrinsicContentSize
 {
-  return self.label.intrinsicContentSize;
-}
-
-- (void)layoutSubviews
-{
-  [super layoutSubviews];
+    CGSize size = self.label.intrinsicContentSize;
+    size.width += 20;
+    size.height += 20;
+    return size;
 }
 
 @end

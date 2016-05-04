@@ -7,15 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		89C9C8C1CAA139E8C3F8DC27 /* libPods-CenterFlow.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19FE6FBDF1A7F0531B0558FC /* libPods-CenterFlow.a */; };
-		906DF5F2E987CDDF7B96ACC1 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D7C963BB7B28CF1B2966D389 /* libPods.a */; };
 		CF0E9DA41AE914A300754C1D /* Launch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF0E9DA31AE914A300754C1D /* Launch.storyboard */; };
+		CF1EDF8D1CDA54EA004D7709 /* KTAwesomeSizingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CF1EDF8C1CDA54EA004D7709 /* KTAwesomeSizingCell.m */; };
 		CF2A543419E702E500BAFA7F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2A543319E702E500BAFA7F /* main.m */; };
 		CF2A543719E702E500BAFA7F /* KTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2A543619E702E500BAFA7F /* KTAppDelegate.m */; };
 		CF2A543F19E702E500BAFA7F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF2A543E19E702E500BAFA7F /* Images.xcassets */; };
 		CF2A545919E704C700BAFA7F /* KTBasicCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2A545819E704C700BAFA7F /* KTBasicCollectionViewController.m */; };
 		CF2A545C19E7061300BAFA7F /* KTAwesomeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2A545B19E7061300BAFA7F /* KTAwesomeCell.m */; };
 		CF2A545E19E7084100BAFA7F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CF2A545D19E7084100BAFA7F /* Default-568h@2x.png */; };
+		CFA1AADE1CDA724B00373D0E /* tabbar-image.png in Resources */ = {isa = PBXBuildFile; fileRef = CFA1AADB1CDA724B00373D0E /* tabbar-image.png */; };
+		CFA1AADF1CDA724B00373D0E /* tabbar-image@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CFA1AADC1CDA724B00373D0E /* tabbar-image@2x.png */; };
+		CFA1AAE01CDA724B00373D0E /* tabbar-image@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CFA1AADD1CDA724B00373D0E /* tabbar-image@3x.png */; };
 		CFD354581CD942170009443A /* KTCenterFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = CFD354571CD942170009443A /* KTCenterFlowLayout.m */; };
 		CFD3545B1CD9485A0009443A /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = CFD3545A1CD9485A0009443A /* Constants.m */; };
 		CFD3545E1CD949780009443A /* KTVariableHeightCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFD3545D1CD949780009443A /* KTVariableHeightCollectionViewController.m */; };
@@ -24,14 +26,10 @@
 
 /* Begin PBXFileReference section */
 		19FE6FBDF1A7F0531B0558FC /* libPods-CenterFlow.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CenterFlow.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		29FD6E84A0A55313E34861B7 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		3ECF6DD851140C95357BED1E /* Pods-CenterFlowTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CenterFlowTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CenterFlowTests/Pods-CenterFlowTests.debug.xcconfig"; sourceTree = "<group>"; };
-		4AFEF64C7155472DB962BE48 /* Pods-CenterFlow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CenterFlow.release.xcconfig"; path = "Pods/Target Support Files/Pods-CenterFlow/Pods-CenterFlow.release.xcconfig"; sourceTree = "<group>"; };
-		53AAACBC5E8ACD76A2F4BF31 /* Pods-CenterFlowTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CenterFlowTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CenterFlowTests/Pods-CenterFlowTests.release.xcconfig"; sourceTree = "<group>"; };
-		638F9B38707E6438059B8C19 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		A75292300854AF4BFB32B96E /* Pods-CenterFlow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CenterFlow.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CenterFlow/Pods-CenterFlow.debug.xcconfig"; sourceTree = "<group>"; };
 		BA0FF2F233AC4708DDDF959F /* libPods-CenterFlowTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CenterFlowTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF0E9DA31AE914A300754C1D /* Launch.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Launch.storyboard; sourceTree = "<group>"; };
+		CF1EDF8B1CDA54EA004D7709 /* KTAwesomeSizingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTAwesomeSizingCell.h; sourceTree = "<group>"; };
+		CF1EDF8C1CDA54EA004D7709 /* KTAwesomeSizingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KTAwesomeSizingCell.m; sourceTree = "<group>"; };
 		CF2A542E19E702E500BAFA7F /* CenterFlow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CenterFlow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF2A543219E702E500BAFA7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CF2A543319E702E500BAFA7F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -43,6 +41,9 @@
 		CF2A545A19E7061300BAFA7F /* KTAwesomeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTAwesomeCell.h; sourceTree = "<group>"; };
 		CF2A545B19E7061300BAFA7F /* KTAwesomeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KTAwesomeCell.m; sourceTree = "<group>"; };
 		CF2A545D19E7084100BAFA7F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		CFA1AADB1CDA724B00373D0E /* tabbar-image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar-image.png"; sourceTree = "<group>"; };
+		CFA1AADC1CDA724B00373D0E /* tabbar-image@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar-image@2x.png"; sourceTree = "<group>"; };
+		CFA1AADD1CDA724B00373D0E /* tabbar-image@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar-image@3x.png"; sourceTree = "<group>"; };
 		CFD354561CD942170009443A /* KTCenterFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KTCenterFlowLayout.h; path = ../../KTCenterFlowLayout.h; sourceTree = "<group>"; };
 		CFD354571CD942170009443A /* KTCenterFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KTCenterFlowLayout.m; path = ../../KTCenterFlowLayout.m; sourceTree = "<group>"; };
 		CFD354591CD9485A0009443A /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
@@ -59,8 +60,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89C9C8C1CAA139E8C3F8DC27 /* libPods-CenterFlow.a in Frameworks */,
-				906DF5F2E987CDDF7B96ACC1 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,26 +76,12 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		49E6FFD8914783FD091479DC /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				A75292300854AF4BFB32B96E /* Pods-CenterFlow.debug.xcconfig */,
-				4AFEF64C7155472DB962BE48 /* Pods-CenterFlow.release.xcconfig */,
-				3ECF6DD851140C95357BED1E /* Pods-CenterFlowTests.debug.xcconfig */,
-				53AAACBC5E8ACD76A2F4BF31 /* Pods-CenterFlowTests.release.xcconfig */,
-				29FD6E84A0A55313E34861B7 /* Pods.debug.xcconfig */,
-				638F9B38707E6438059B8C19 /* Pods.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		CF2A542519E702E500BAFA7F = {
 			isa = PBXGroup;
 			children = (
 				CF2A543019E702E500BAFA7F /* CenterFlow */,
 				CF2A542F19E702E500BAFA7F /* Products */,
 				0405686C57B14B068693DE2D /* Frameworks */,
-				49E6FFD8914783FD091479DC /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -111,6 +96,9 @@
 		CF2A543019E702E500BAFA7F /* CenterFlow */ = {
 			isa = PBXGroup;
 			children = (
+				CFA1AADB1CDA724B00373D0E /* tabbar-image.png */,
+				CFA1AADC1CDA724B00373D0E /* tabbar-image@2x.png */,
+				CFA1AADD1CDA724B00373D0E /* tabbar-image@3x.png */,
 				CFD354561CD942170009443A /* KTCenterFlowLayout.h */,
 				CFD354571CD942170009443A /* KTCenterFlowLayout.m */,
 				CF2A545D19E7084100BAFA7F /* Default-568h@2x.png */,
@@ -129,6 +117,8 @@
 				CFD3545D1CD949780009443A /* KTVariableHeightCollectionViewController.m */,
 				CFD3545F1CD94AA70009443A /* KTSelfSizingCollectionViewController.h */,
 				CFD354601CD94AA70009443A /* KTSelfSizingCollectionViewController.m */,
+				CF1EDF8B1CDA54EA004D7709 /* KTAwesomeSizingCell.h */,
+				CF1EDF8C1CDA54EA004D7709 /* KTAwesomeSizingCell.m */,
 			);
 			path = CenterFlow;
 			sourceTree = "<group>";
@@ -149,12 +139,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CF2A545119E702E500BAFA7F /* Build configuration list for PBXNativeTarget "CenterFlow" */;
 			buildPhases = (
-				6A360096C3484F65AB0C8820 /* Check Pods Manifest.lock */,
 				CF2A542A19E702E500BAFA7F /* Sources */,
 				CF2A542B19E702E500BAFA7F /* Frameworks */,
 				CF2A542C19E702E500BAFA7F /* Resources */,
-				D97EA7C8F54344D1B18CEB4E /* Copy Pods Resources */,
-				A06EBB8410ADB98E5D42FC54 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -202,61 +189,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFA1AADF1CDA724B00373D0E /* tabbar-image@2x.png in Resources */,
 				CF2A543F19E702E500BAFA7F /* Images.xcassets in Resources */,
 				CF2A545E19E7084100BAFA7F /* Default-568h@2x.png in Resources */,
 				CF0E9DA41AE914A300754C1D /* Launch.storyboard in Resources */,
+				CFA1AADE1CDA724B00373D0E /* tabbar-image.png in Resources */,
+				CFA1AAE01CDA724B00373D0E /* tabbar-image@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		6A360096C3484F65AB0C8820 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		A06EBB8410ADB98E5D42FC54 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D97EA7C8F54344D1B18CEB4E /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CF2A542A19E702E500BAFA7F /* Sources */ = {
@@ -265,6 +207,7 @@
 			files = (
 				CF2A543719E702E500BAFA7F /* KTAppDelegate.m in Sources */,
 				CFD354611CD94AA70009443A /* KTSelfSizingCollectionViewController.m in Sources */,
+				CF1EDF8D1CDA54EA004D7709 /* KTAwesomeSizingCell.m in Sources */,
 				CFD354581CD942170009443A /* KTCenterFlowLayout.m in Sources */,
 				CF2A545C19E7061300BAFA7F /* KTAwesomeCell.m in Sources */,
 				CFD3545E1CD949780009443A /* KTVariableHeightCollectionViewController.m in Sources */,
@@ -355,7 +298,6 @@
 		};
 		CF2A545219E702E500BAFA7F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 29FD6E84A0A55313E34861B7 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CenterFlow/Info.plist;
@@ -367,7 +309,6 @@
 		};
 		CF2A545319E702E500BAFA7F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 638F9B38707E6438059B8C19 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CenterFlow/Info.plist;

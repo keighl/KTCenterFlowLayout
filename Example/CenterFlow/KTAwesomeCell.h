@@ -7,8 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "KTEdgeLabel.h"
 
 @interface KTAwesomeCell : UICollectionViewCell
-@property (strong) KTEdgeLabel *label;
+@property (strong) UILabel *label;
 @end

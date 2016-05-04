@@ -67,8 +67,6 @@
   sizeForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     self.sizingCell.label.text = self.states[indexPath.row];
-    [self.sizingCell setNeedsLayout];
-    [self.sizingCell layoutIfNeeded];
     return self.sizingCell.intrinsicContentSize;
 }
 
