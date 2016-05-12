@@ -2,25 +2,29 @@
 //  CustomCenterFlowLayout.swift
 //  CenterFlow
 //
-//  Created by Parsons, Rachelanne - Rachelanne on 5/10/16.
+//  Created by Parsons, Rachel - on 5/10/16.
 //  Copyright © 2016 keighl. All rights reserved.
 //
 
 import UIKit
 
-class CustomerCenterFlowLayout: UICollectionViewFlowLayout {
+class CustomCenterFlowLayout: UICollectionViewFlowLayout {
     
     override func layoutAttributesForElementsInRect(rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
-        var attributes = [UICollectionViewLayoutAttributes]()
         
-        if let superAttributes = super.layoutAttributesForElementsInRect(rect) {
-            attributes = superAttributes
+        var attributes = [UICollectionViewLayoutAttributes]()
+
+        let superAttributes = super.layoutAttributesForElementsInRect(rect)
+        
+        for attrib in superAttributes! {
+            let attributesCopy = attrib.copy() as! UICollectionViewLayoutAttributes
+            attributes.append(attributesCopy)
         }
 
         var rowCollections = [NSNumber:[UICollectionViewLayoutAttributes]]()
 
         for itemAttributes in attributes {
-            //normalize the midY to others in the row; with variable cell heights can be slightly different
+
             let midYRound = roundf(Float(CGRectGetMidY(itemAttributes.frame)))
             let midYPlus = midYRound + 1
             let midYMinus = midYRound - 1
