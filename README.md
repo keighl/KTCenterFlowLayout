@@ -1,6 +1,6 @@
 # KTCenterFlowLayout
 
-[![CocoaPods](https://img.shields.io/cocoapods/v/KTCenterFlowLayout.svg?maxAge=2592000)]()
+[![CocoaPods](https://img.shields.io/cocoapods/v/KTCenterFlowLayout.svg)]()
 
 KTCenterFlowLayout is a subclass of UICollectionViewFlowLayout which Aligns cells to the center of a collection view. It effectively enforces the `minimumInteritemSpacing`.
 
