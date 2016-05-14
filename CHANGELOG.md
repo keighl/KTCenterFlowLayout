@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## 1.2 - 2016-05-14
+
+* Refactoring layout logic
+
 ## 1.1.1 - 2015-09-15
 
 * Fixes a caching issue on iOS9 by deep copying `[super layoutAttributesForElementsInRect:rect]`. Thanks [@fwaddle](https://github.com/fwaddle)
