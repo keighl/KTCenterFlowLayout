@@ -23,26 +23,37 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
     
-    
-    
-    
     UINavigationController *basicNavController = [UINavigationController new];
-    basicNavController.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Basic" image:[UIImage imageNamed:@"tabbar-image"] tag:2];
-    KTBasicCollectionViewController *basicController = [[KTBasicCollectionViewController alloc] initWithCollectionViewLayout:[KTCenterFlowLayout new]];
+    basicNavController.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Vanilla" image:[UIImage imageNamed:@"tabbar-image"] tag:2];
+    KTBasicCollectionViewController *basicController = [[KTBasicCollectionViewController alloc] initWithCollectionViewLayout:[UICollectionViewFlowLayout new]];
+    basicController.title = @"UICollectionViewFlowLayout";
     [basicNavController setViewControllers:@[basicController]];
     
+    UINavigationController *centerNavController = [UINavigationController new];
+    KTBasicCollectionViewController *centerController = [[KTBasicCollectionViewController alloc] initWithCollectionViewLayout:[KTCenterFlowLayout new]];
+    centerController.title = @"KTCenterFlowLayout";
+    centerNavController.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Centered" image:[UIImage imageNamed:@"tabbar-image"] tag:2];
+    [centerNavController setViewControllers:@[centerController]];
+    
     UINavigationController *heightsNavController = [UINavigationController new];
-    heightsNavController.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Variable Heights" image:[UIImage imageNamed:@"tabbar-image"] tag:1];
+    heightsNavController.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Variable Height" image:[UIImage imageNamed:@"tabbar-image"] tag:1];
     KTVariableHeightCollectionViewController *heightsController = [[KTVariableHeightCollectionViewController alloc] initWithCollectionViewLayout:[KTCenterFlowLayout new]];
+    heightsController.title = @"Variable Height";
     [heightsNavController setViewControllers:@[heightsController]];
     
     UINavigationController *selfsizeNavController = [UINavigationController new];
     selfsizeNavController.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Self Sizing" image:[UIImage imageNamed:@"tabbar-image"] tag:2];
     KTSelfSizingCollectionViewController *selfsizeController = [[KTSelfSizingCollectionViewController alloc] initWithCollectionViewLayout:[KTCenterFlowLayout new]];
+    selfsizeController.title = @"Self Sizing";
     [selfsizeNavController setViewControllers:@[selfsizeController]];
     
     UITabBarController *tabBarController = [[UITabBarController alloc] init];
-    [tabBarController setViewControllers:@[basicNavController, heightsNavController, selfsizeNavController]];
+    [tabBarController setViewControllers:@[
+                                           basicNavController,
+                                           centerNavController,
+                                           heightsNavController,
+                                           //selfsizeNavController
+                                           ]];
     
     self.window.rootViewController = tabBarController;
     [self.window makeKeyAndVisible];

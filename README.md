@@ -34,4 +34,8 @@ UICollectionViewController(collectionViewLayout: layout)
 
 See the layout in use in the `./Example` app:
 
-![](https://github.com/keighl/KTCenterFlowLayout/raw/master/example.png)
+<img src="https://github.com/keighl/KTCenterFlowLayout/raw/master/example.png" width="300">
+
+### Self-sizing cell
+
+This layout doesn't work with self-sizing collection view cells (`estimatedItemSize`). Of course, neither does the vanilla `UICollectionViewFlowLayout`. Pull requests appreciated from anybody interested in solving self-sizing layouts!

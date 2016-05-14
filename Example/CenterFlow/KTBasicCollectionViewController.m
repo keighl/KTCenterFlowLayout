@@ -22,8 +22,6 @@
 {
     [super viewDidLoad];
   
-    self.title = @"Basic";
-  
     self.collectionView.backgroundColor = [UIColor whiteColor];
   
     [(KTCenterFlowLayout *)self.collectionViewLayout setMinimumInteritemSpacing:15.f];

@@ -21,9 +21,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    self.title = @"Self Sizing";
-    
+        
     self.collectionView.backgroundColor = [UIColor whiteColor];
     
     [(KTCenterFlowLayout *)self.collectionViewLayout setEstimatedItemSize:CGSizeMake(100, 50)];

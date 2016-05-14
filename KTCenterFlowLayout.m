@@ -47,7 +47,6 @@
 
 - (UICollectionViewLayoutAttributes *)layoutAttributesForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    // Access the cached attributes if possible
     if (self.attrCache[indexPath])
     {
         return self.attrCache[indexPath];

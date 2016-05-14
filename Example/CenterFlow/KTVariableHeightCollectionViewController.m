@@ -21,9 +21,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    self.title = @"Variable Heights";
-    
+        
     self.collectionView.backgroundColor = [UIColor whiteColor];
     
     [(KTCenterFlowLayout *)self.collectionViewLayout setMinimumInteritemSpacing:15.f];
