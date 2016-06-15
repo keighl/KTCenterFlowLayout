@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "KTBasicCollectionViewController.h"
 
-@interface KTVariableHeightCollectionViewController : UICollectionViewController
-
+@interface KTVariableHeightCollectionViewController : KTBasicCollectionViewController
 @end

@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "KTAwesomeCell.h"
 
 @interface KTBasicCollectionViewController : UICollectionViewController
-
+@property (strong) NSArray *states;
+@property (strong) KTAwesomeCell *sizingCell;
 @end
