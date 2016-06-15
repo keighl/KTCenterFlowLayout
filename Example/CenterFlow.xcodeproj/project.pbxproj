@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CF0E9DA41AE914A300754C1D /* Launch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF0E9DA31AE914A300754C1D /* Launch.storyboard */; };
+		CF12786A1D10D155007BD3CC /* KTHeaderFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF1278691D10D155007BD3CC /* KTHeaderFooterView.m */; };
 		CF1EDF8D1CDA54EA004D7709 /* KTAwesomeSizingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CF1EDF8C1CDA54EA004D7709 /* KTAwesomeSizingCell.m */; };
 		CF2A543419E702E500BAFA7F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2A543319E702E500BAFA7F /* main.m */; };
 		CF2A543719E702E500BAFA7F /* KTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2A543619E702E500BAFA7F /* KTAppDelegate.m */; };
@@ -28,6 +29,8 @@
 		19FE6FBDF1A7F0531B0558FC /* libPods-CenterFlow.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CenterFlow.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA0FF2F233AC4708DDDF959F /* libPods-CenterFlowTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CenterFlowTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF0E9DA31AE914A300754C1D /* Launch.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Launch.storyboard; sourceTree = "<group>"; };
+		CF1278681D10D155007BD3CC /* KTHeaderFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTHeaderFooterView.h; sourceTree = "<group>"; };
+		CF1278691D10D155007BD3CC /* KTHeaderFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KTHeaderFooterView.m; sourceTree = "<group>"; };
 		CF1EDF8B1CDA54EA004D7709 /* KTAwesomeSizingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTAwesomeSizingCell.h; sourceTree = "<group>"; };
 		CF1EDF8C1CDA54EA004D7709 /* KTAwesomeSizingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KTAwesomeSizingCell.m; sourceTree = "<group>"; };
 		CF2A542E19E702E500BAFA7F /* CenterFlow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CenterFlow.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -119,6 +122,8 @@
 				CFD354601CD94AA70009443A /* KTSelfSizingCollectionViewController.m */,
 				CF1EDF8B1CDA54EA004D7709 /* KTAwesomeSizingCell.h */,
 				CF1EDF8C1CDA54EA004D7709 /* KTAwesomeSizingCell.m */,
+				CF1278681D10D155007BD3CC /* KTHeaderFooterView.h */,
+				CF1278691D10D155007BD3CC /* KTHeaderFooterView.m */,
 			);
 			path = CenterFlow;
 			sourceTree = "<group>";
@@ -208,6 +213,7 @@
 				CF2A543719E702E500BAFA7F /* KTAppDelegate.m in Sources */,
 				CFD354611CD94AA70009443A /* KTSelfSizingCollectionViewController.m in Sources */,
 				CF1EDF8D1CDA54EA004D7709 /* KTAwesomeSizingCell.m in Sources */,
+				CF12786A1D10D155007BD3CC /* KTHeaderFooterView.m in Sources */,
 				CFD354581CD942170009443A /* KTCenterFlowLayout.m in Sources */,
 				CF2A545C19E7061300BAFA7F /* KTAwesomeCell.m in Sources */,
 				CFD3545E1CD949780009443A /* KTVariableHeightCollectionViewController.m in Sources */,

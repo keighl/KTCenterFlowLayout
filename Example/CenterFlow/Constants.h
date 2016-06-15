@@ -8,6 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
+static NSString *headerCellID = @"HeaderCell";
+static NSString *footerCellID = @"FooterCell";
+static NSString *stateCellID = @"StateCell";
+
 @interface Constants : NSObject
 + (NSArray *)states;
 @end

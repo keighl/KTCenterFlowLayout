@@ -31,12 +31,31 @@
         NSInteger r = 0;
         while (r < rows)
         {
-            UICollectionViewLayoutAttributes *attrs = [self layoutAttributesForItemAtIndexPath:[NSIndexPath indexPathForRow:r
-                                                                                                                  inSection:s]];
+            NSIndexPath *indexPath = [NSIndexPath indexPathForRow:r inSection:s];
+            
+            UICollectionViewLayoutAttributes *attrs = [self layoutAttributesForItemAtIndexPath:indexPath];
+            
             if (CGRectIntersectsRect(attrs.frame, rect))
             {
                 [updatedAttributes addObject:attrs];
             }
+            
+            UICollectionViewLayoutAttributes *headerAttrs =  [super layoutAttributesForSupplementaryViewOfKind:UICollectionElementKindSectionHeader
+                                                                                                   atIndexPath:indexPath];
+            
+            if (headerAttrs && CGRectIntersectsRect(headerAttrs.frame, rect))
+            {
+                [updatedAttributes addObject:headerAttrs];
+            }
+            
+            UICollectionViewLayoutAttributes *footerAttrs =  [super layoutAttributesForSupplementaryViewOfKind:UICollectionElementKindSectionFooter
+                                                                                                   atIndexPath:indexPath];
+            
+            if (footerAttrs && CGRectIntersectsRect(footerAttrs.frame, rect))
+            {
+                [updatedAttributes addObject:footerAttrs];
+            }
+            
             r++;
         }
         s++;

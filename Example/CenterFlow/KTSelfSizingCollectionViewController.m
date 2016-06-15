@@ -29,7 +29,7 @@
     [(KTCenterFlowLayout *)self.collectionViewLayout setMinimumLineSpacing:15.f];
     [(KTCenterFlowLayout *)self.collectionViewLayout setSectionInset:UIEdgeInsetsMake(20, 20, 20, 20)];
     
-    [self.collectionView registerClass:[KTAwesomeSizingCell class] forCellWithReuseIdentifier:@"AwesomeCell"];
+    [self.collectionView registerClass:[KTAwesomeSizingCell class] forCellWithReuseIdentifier:stateCellID];
     
     self.sizingCell = [KTAwesomeSizingCell new];
     
@@ -52,7 +52,7 @@
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    KTAwesomeSizingCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"AwesomeCell"                                 
+    KTAwesomeSizingCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:stateCellID
                                                                           forIndexPath:indexPath];
     
     cell.label.text = self.states[indexPath.row];
