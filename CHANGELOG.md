@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## 1.3 - 2016-05-14
+
+* Fixes broken header/footer supplementary views
+
 ## 1.2 - 2016-05-14
 
 * Refactoring layout logic
