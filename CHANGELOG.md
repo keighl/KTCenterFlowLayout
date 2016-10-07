@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## 1.3.1 - 2016-05-14
+
+* Adds important nil check (#25)
+
 ## 1.3 - 2016-05-14
 
 * Fixes broken header/footer supplementary views
