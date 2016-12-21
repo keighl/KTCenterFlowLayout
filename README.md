@@ -38,6 +38,10 @@ See the layout in use in the `./Example` app:
 
 <img src="https://github.com/keighl/KTCenterFlowLayout/raw/master/example.png" width="300">
 
+### Horizontal Scrolling
+
+This layout **doesn't** work with `UICollectionViewScrollDirection.horizontal`. 
+
 ### Self-sizing cells
 
-This layout doesn't work with self-sizing collection view cells (`estimatedItemSize`). Of course, neither does the vanilla `UICollectionViewFlowLayout`. Pull requests appreciated from anybody interested in solving self-sizing layouts!
+This layout **doesn't** work with self-sizing collection view cells (`estimatedItemSize`). Of course, neither does the vanilla `UICollectionViewFlowLayout`. Pull requests appreciated from anybody interested in solving self-sizing layouts!
