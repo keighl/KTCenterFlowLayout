@@ -21,6 +21,7 @@
 
 - (NSArray *)layoutAttributesForElementsInRect:(CGRect)rect
 {
+    [super layoutAttributesForElementsInRect:rect];
     NSMutableArray *updatedAttributes = [NSMutableArray new];
 
     NSInteger sections = [self.collectionView numberOfSections];
