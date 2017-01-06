@@ -21,6 +21,7 @@
 
 - (NSArray *)layoutAttributesForElementsInRect:(CGRect)rect
 {
+    [super layoutAttributesForElementsInRect:rect];
     NSMutableArray *updatedAttributes = [NSMutableArray new];
 
     NSInteger sections = [self.collectionView numberOfSections];
@@ -105,6 +106,10 @@
         NSIndexPath *prevPath = [NSIndexPath indexPathForRow:prevIDX inSection:indexPath.section];
         CGRect prevFrame = [super layoutAttributesForItemAtIndexPath:prevPath].frame;
 
+        //accommodate overlapping rows in intersection tests
+        if (self.minimumLineSpacing < 0)
+            prevFrame.origin.y += self.minimumLineSpacing;
+
         // If the item intersects the test frame, it's in the same row
         if (CGRectIntersectsRect(prevFrame, rowTestFrame))
             rowStartIDX = prevIDX;
@@ -126,8 +131,13 @@
         NSIndexPath *buddyPath = [NSIndexPath indexPathForRow:buddyIDX inSection:indexPath.section];
 
         UICollectionViewLayoutAttributes *buddyAttributes = [super layoutAttributesForItemAtIndexPath:buddyPath];
+        CGRect buddyAttributesFrame = buddyAttributes.frame;
 
-        if (CGRectIntersectsRect(buddyAttributes.frame, rowTestFrame))
+        //accommodate overlapping rows in intersection tests
+        if (self.minimumLineSpacing < 0)
+            buddyAttributesFrame.origin.y -= self.minimumLineSpacing;
+
+        if (CGRectIntersectsRect(buddyAttributesFrame, rowTestFrame))
         {
             // If the item intersects the test frame, it's in the same row
             [rowBuddies addObject:[buddyAttributes copy]];
