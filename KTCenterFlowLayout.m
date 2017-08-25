@@ -35,7 +35,7 @@
 
             UICollectionViewLayoutAttributes *attrs = [self layoutAttributesForItemAtIndexPath:indexPath];
             
-            if (attrs && CGRectIntersectsRect(attrs.frame, rect))
+            if (attrs)
             {
                 [updatedAttributes addObject:attrs];
             }
@@ -43,7 +43,7 @@
             UICollectionViewLayoutAttributes *headerAttrs =  [super layoutAttributesForSupplementaryViewOfKind:UICollectionElementKindSectionHeader
                                                                                                    atIndexPath:indexPath];
 
-            if (headerAttrs && CGRectIntersectsRect(headerAttrs.frame, rect))
+            if (headerAttrs)
             {
                 [updatedAttributes addObject:headerAttrs];
             }
@@ -51,7 +51,7 @@
             UICollectionViewLayoutAttributes *footerAttrs =  [super layoutAttributesForSupplementaryViewOfKind:UICollectionElementKindSectionFooter
                                                                                                    atIndexPath:indexPath];
 
-            if (footerAttrs && CGRectIntersectsRect(footerAttrs.frame, rect))
+            if (footerAttrs)
             {
                 [updatedAttributes addObject:footerAttrs];
             }
