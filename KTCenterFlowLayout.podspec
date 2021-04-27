@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.tvos.deployment_target = '9.0'
   s.requires_arc = true
 
-  s.source_files = 'KTCenterFlowLayout.{h,m}'
+  s.source_files = 'KTCenterFlowLayout/KTCenterFlowLayout.{h,m}'
 
   s.frameworks = 'UIKit'
 
